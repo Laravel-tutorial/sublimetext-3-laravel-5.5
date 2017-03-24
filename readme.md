@@ -42,9 +42,9 @@ What's missing
 --------------
 
 
-[Laravel User Guide]:  https://laravel.com/docs/master
+[Laravel User Guide]  https://laravel.com/docs/master
 
-[Sublime Text 3]:   http://www.sublimetext.com/3
+[Sublime Text 3]   http://www.sublimetext.com/3
 
 I've included every Laravel function I could find, but if I've missed anything out, I'd appreciate it if you let me know.
 
