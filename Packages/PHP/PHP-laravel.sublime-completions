@@ -1,0 +1,63 @@
+{
+  "scope": "source.php - variable.other.php",
+
+  "completions":
+  [
+    "php",
+    // Benchmarking class
+    { "trigger": "\\$table->bigIncrements", "contents": "\\$table->bigIncrements('${1:id}');" },
+    { "trigger": "\\$table->bigInteger", "contents": "\\$table->bigInteger('${1:votes}');" },
+    { "trigger": "\\$table->binary", "contents": "\\$table->binary('${1:data}');" },
+    { "trigger": "\\$table->char", "contents": "\\$table->char('${1:name}',${2:4});" },
+    { "trigger": "\\$table->date", "contents": "\\$table->date('${1:created_at}');" },
+    { "trigger": "\\$table->dateTime", "contents": "\\$table->dateTime('${1:created_at}');" },
+    { "trigger": "\\$table->dateTimeTz", "contents": "\\$table->dateTimeTz('${1:created_at}');" },
+    { "trigger": "\\$table->decimal", "contents": "\\$table->decimal('${1:amount}',${2:4});" },
+    { "trigger": "\\$table->double", "contents": "\\$table->double('${1:amount}',${2:4});" },
+    { "trigger": "\\$table->enum", "contents": "\\$table->enum('${1:choices}',array(${2:value}));" },
+    { "trigger": "\\$table->float", "contents": "\\$table->float('${1:amount}',${2:8},${3:2});" },
+    { "trigger": "\\$table->increments", "contents": "\\$table->increments('${1:id}');" },
+    { "trigger": "\\$table->integer", "contents": "\\$table->integer('${1:votes}');" },
+    { "trigger": "\\$table->ipAddress", "contents": "\\$table->ipAddress('${1:visitor}');" },
+    { "trigger": "\\$table->json", "contents": "\\$table->json('${1:options}');" },
+    { "trigger": "\\$table->jsonb", "contents": "\\$table->jsonb('${1:options}');" },
+    { "trigger": "\\$table->longText", "contents": "\\$table->longText('${1:description}');" },
+    { "trigger": "\\$table->macAddress", "contents": "\\$table->macAddress('${1:device}');" },
+    { "trigger": "\\$table->mediumIncrements", "contents": "\\$table->mediumIncrements('${1:id}');" },
+    { "trigger": "\\$table->mediumInteger", "contents": "\\$table->mediumInteger('${1:numbers}');" },
+    { "trigger": "\\$table->mediumText", "contents": "\\$table->mediumText('${1:description}');" },
+    { "trigger": "\\$table->morphs", "contents": "\\$table->morphs('${1:taggable}');" },
+    { "trigger": "\\$table->nullableMorphs", "contents": "\\$table->nullableMorphs('${1:taggable}');" },
+    { "trigger": "\\$table->nullableTimestamps", "contents": "\\$table->nullableTimestamps();" },
+    { "trigger": "\\$table->rememberToken", "contents": "\\$table->rememberToken();" },
+    { "trigger": "\\$table->smallIncrements", "contents": "\\$table->smallIncrements('${1:id}');" },
+    { "trigger": "\\$table->smallInteger", "contents": "\\$table->smallInteger('${1:votes}');" },
+    { "trigger": "\\$table->softDeletes", "contents": "\\$table->softDeletes();" },
+    { "trigger": "\\$table->string('email')", "contents": "\\$table->string('${1:numbers}');" },
+    { "trigger": "\\$table->string('name')", "contents": "\\$table->string('${1:numbers}',${2:100});" },
+    { "trigger": "\\$table->text", "contents": "\\$table->text('${1:description}');" },
+    { "trigger": "\\$table->time", "contents": "\\$table->time('${1:sunrise}');" },
+    { "trigger": "\\$table->timeTz", "contents": "\\$table->timeTz('${1:sunrise}');" },
+    { "trigger": "\\$table->tinyInteger", "contents": "\\$table->tinyInteger('${1:numbers}');" },
+    { "trigger": "\\$table->timestamp", "contents": "\\$table->timestamp('${1:added_on}');" },
+    { "trigger": "\\$table->timestampTz", "contents": "\\$table->timestampTz('${1:added_on}');" },
+    { "trigger": "\\$table->timestamps", "contents": "\\$table->timestamps();" },
+    { "trigger": "\\$table->timestampsTz", "contents": "\\$table->timestampsTz();" },
+    { "trigger": "\\$table->unsignedBigInteger", "contents": "\\$table->unsignedBigInteger('${1:votes}');" },
+    { "trigger": "\\$table->unsignedInteger", "contents": "\\$table->unsignedInteger('${1:votes}');" },
+    { "trigger": "\\$table->unsignedMediumInteger", "contents": "\\$table->unsignedMediumInteger('${1:votes}');" },
+    { "trigger": "\\$table->unsignedSmallInteger", "contents": "\\$table->unsignedSmallInteger('${1:votes}');" },
+    { "trigger": "\\$table->unsignedTinyInteger", "contents": "\\$table->unsignedTinyInteger('${1:votes}');" },
+    { "trigger": "\\$table->uuid", "contents": "\\$table->uuid('${1:id}');" },
+    
+    // Array Helper
+    { "trigger": "element", "contents": "element(${1:'test', \\$array, return_value})" },
+    
+    // XML Helper
+    { "trigger": "xml_convert", "contents": "xml_convert(${1:\\$string})" }
+
+  ]
+}
+
+
+
