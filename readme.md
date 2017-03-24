@@ -1,4 +1,4 @@
-Sublime Text 3 snippets for Laravel 5.5
+Sublime Text 3 Code Completions for Laravel 5.5
 ==========================================
 
 
