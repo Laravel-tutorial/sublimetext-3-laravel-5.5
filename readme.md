@@ -35,7 +35,16 @@ Usage
 -----
 
 Just start typing and up will pop the Laravel functions in question.
+By default Sublime Text only triggers on characters, so if you’re trying to auto-complete by typing “$” it isn’t going to work. Instead of "$table->text", try typing "table->text" and you should see the list pop up.
 
+Tips
+-----
+
+To make $this work, add the $ character as a trigger in your Sublime Text preferences / settings:
+
+"auto_complete_triggers": [ {"selector": "text.html", "characters": "<$"} ],
+
+The < is there by default for HTML purposes, and the $ is added for PHP.
 
 
 What's missing

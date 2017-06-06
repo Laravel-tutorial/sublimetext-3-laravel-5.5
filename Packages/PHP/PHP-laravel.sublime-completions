@@ -33,8 +33,8 @@
     { "trigger": "\\$table->smallIncrements", "contents": "\\$table->smallIncrements('${1:id}');" },
     { "trigger": "\\$table->smallInteger", "contents": "\\$table->smallInteger('${1:votes}');" },
     { "trigger": "\\$table->softDeletes", "contents": "\\$table->softDeletes();" },
-    { "trigger": "\\$table->string('email')", "contents": "\\$table->string('${1:numbers}');" },
-    { "trigger": "\\$table->string('name')", "contents": "\\$table->string('${1:numbers}',${2:100});" },
+    { "trigger": "\\$table->string('email')", "contents": "\\$table->string('${1:email}');" },
+    { "trigger": "\\$table->string('name')", "contents": "\\$table->string('${1:name}',${2:100});" },
     { "trigger": "\\$table->text", "contents": "\\$table->text('${1:description}');" },
     { "trigger": "\\$table->time", "contents": "\\$table->time('${1:sunrise}');" },
     { "trigger": "\\$table->timeTz", "contents": "\\$table->timeTz('${1:sunrise}');" },
@@ -50,14 +50,26 @@
     { "trigger": "\\$table->unsignedTinyInteger", "contents": "\\$table->unsignedTinyInteger('${1:votes}');" },
     { "trigger": "\\$table->uuid", "contents": "\\$table->uuid('${1:id}');" },
     
-    // Array Helper
-    { "trigger": "element", "contents": "element(${1:'test', \\$array, return_value})" },
+   // Route 
+    { "trigger": "Route_get", "contents": "Route::get('${1:photo}', '${2:Photo}Controller@${3:show}');" },
+    { "trigger": "Route_post", "contents": "Route::post('${1:photo}', '${2:Photo}Controller@${3:store}');" },
+    { "trigger": "Route_put", "contents": "Route::put('${1:photo}/{${2:id}}', '${3:Photo}Controller@${4:update}');" },
+    { "trigger": "Route_patch", "contents": "Route::patch('${1:photo}/{${2:id}}', '${3:Photo}Controller@${4:update}');" },
+    { "trigger": "Route_delete", "contents": "Route::delete('${1:photo}/{${2:id}}', '${3:Photo}Controller@${4:destroy}');" },
+    { "trigger": "Route_resource", "contents": "Route::resource('${1:photo}','${2:Photo}Controller');" },
     
     // XML Helper
-    { "trigger": "xml_convert", "contents": "xml_convert(${1:\\$string})" }
+    { "trigger": "\\$request->all()", "contents": "\\$request->all()" },
+    
+
+
+    //DB Query
+    { "trigger": "DB table()->get()", "contents": "\\$${1:users} = DB::table('${2:users}')->get();" },
+    { "trigger": "DB table()->find('id')", "contents": "\\$${1:users} = DB::table('${2:users}')->find(\\$${3:id});" },
+    { "trigger": "DB table()->where->first()", "contents": "\\$${1:users} = DB::table('${2:users}')->where('${3:name}', \\$${4:name})->first();" },
+
 
   ]
 }
-
 
 
